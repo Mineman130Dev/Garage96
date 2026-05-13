@@ -1,7 +1,10 @@
 body {
-  background: #111 url("checkerboard.png");
+  background-color: black;
+  background-image: url("images/fire.gif");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-attachment: fixed;
   color: white;
-  font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
 .page {
@@ -74,4 +77,28 @@ footer {
 .photo-card p {
   color: yellow;
   font-weight: bold;
+}
+
+.fire-title {
+  font-size: 60px;
+  text-align: center;
+  color: orange;
+
+  text-shadow:
+    0 0 5px red,
+    0 0 10px orange,
+    0 0 20px red,
+    0 0 40px darkred;
+
+  animation: flicker 0.15s infinite alternate;
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.85;
+  }
 }
