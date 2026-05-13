@@ -1,0 +1,77 @@
+body {
+  background: #111 url("checkerboard.png");
+  color: white;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.page {
+  width: 800px;
+  margin: 30px auto;
+  background: #1b1b1b;
+  border: 3px solid red;
+  padding: 20px;
+  box-shadow: 0 0 20px red;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+  text-shadow: 2px 2px black;
+}
+
+nav {
+  text-align: center;
+  background: #333;
+  padding: 10px;
+}
+
+nav a {
+  color: yellow;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.post {
+  background: #222;
+  border: 2px dashed gray;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+footer {
+  text-align: center;
+  color: gray;
+  margin-top: 30px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.photo-card {
+  background: #222;
+  border: 2px solid red;
+  padding: 10px;
+  text-align: center;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.photo-card p {
+  color: yellow;
+  font-weight: bold;
+}
